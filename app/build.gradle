@@ -37,4 +37,9 @@ dependencies {
     compile 'com.jakewharton:butterknife:8.4.0'
     annotationProcessor 'com.jakewharton:butterknife-compiler:8.4.0'
     compile project(':PagerSlidingTabStrip_Lib')
+
+//添加okHttp的依赖
+    compile 'com.squareup.okhttp3:okhttp:3.6.0'
+//gson
+    compile 'com.google.code.gson:gson:2.2.4'
 }

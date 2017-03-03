@@ -6,4 +6,5 @@ package com.wll.googleplay_wll.conf;
 
 public class BuildConfig {
     public static final boolean LOG_DEBUG = true;
+    public static final String URl = "http://192.168.99.203:8080/GooglePlayServer/";
 }

@@ -6,6 +6,7 @@ import android.view.View;
 import android.widget.FrameLayout;
 
 import com.wll.googleplay_wll.R;
+import com.wll.googleplay_wll.proxy.ThreadPoolFactory;
 import com.wll.googleplay_wll.utils.UIUtils;
 
 /**
@@ -131,7 +132,9 @@ public abstract class LoadingPager extends FrameLayout {
 
 
                 target = new LoadDataTask();
-                new Thread(target).start();
+//                new Thread(target).start();
+                //异步加载数据
+                ThreadPoolFactory.getmNomalThreadPoolExecutor().submit(target);
             }
 
         }
